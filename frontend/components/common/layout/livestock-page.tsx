@@ -15,6 +15,7 @@ import { dashboardOverviewSource } from "@/helpers/dashboard-overview-source";
 import LivestockTableContainer from "../table/LivestockTable/Livestock";
 import AreaChartContainer from "../charts/AreaChartContainer";
 import { Fragment } from "react";
+import TransactionsTableContainer from "../table/TransactionsTable/Transactions";
 
 const description = [
   {
@@ -179,6 +180,7 @@ export default function LivestockPage() {
               <AreaChartContainer />
             </div>
           </div>
+            <TransactionsTableContainer />
         </div>
       </div>
     </div>

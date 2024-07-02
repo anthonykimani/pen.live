@@ -17,3 +17,13 @@ export type LivestockType = {
     owner: string;
     timeListed: string;
 }
+
+export type TransactionType = {
+    id:string;
+    name:string;
+    slug: string;
+    price: string;
+    from: string;
+    to: string;
+    timeListed: string;
+}

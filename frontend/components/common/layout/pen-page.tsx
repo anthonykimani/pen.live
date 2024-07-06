@@ -112,8 +112,7 @@ export default function PenPage() {
             <b>5%</b>
           </span>
           <Button
-            variant="outline"
-            className="bg-gradient-to-r from-gradient-light-blue to-gradient-deep-blue text-white"
+            variant="primary"
           >
             Purchase Livestock
           </Button>

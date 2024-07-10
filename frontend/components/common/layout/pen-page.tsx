@@ -13,6 +13,7 @@ import Image from "next/image";
 import DashboardOverview from "../cards/dashboard-overview";
 import { dashboardOverviewSource } from "@/helpers/dashboard-overview-source";
 import LivestockTableContainer from "../table/LivestockTable/Livestock";
+import VideoRecorder from "../video/videorecorder";
 
 export default function PenPage() {
   return (
@@ -129,6 +130,7 @@ export default function PenPage() {
                 return <DashboardOverview element={element} key={index} />;
               })}
             </div>
+            <VideoRecorder />
             <LivestockTableContainer />
           </TabsContent>
           <TabsContent value="analytics">

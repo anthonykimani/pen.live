@@ -20,13 +20,11 @@ import TransactionsTableContainer from "../table/TransactionsTable/Transactions"
 const description = [
   {
     title: "Health",
-    answer:
-      "Excellent, regularly checked by a veterinarian",
+    answer: "Excellent, regularly checked by a veterinarian",
   },
   {
     title: "Age",
-    answer:
-      "3 years",
+    answer: "3 years",
   },
   // More description...
 ];
@@ -110,7 +108,11 @@ export default function LivestockPage() {
         <div>
           <div className="flex flex-col lg:flex-row mt-5 ">
             <div>
-              <Image src={CowNFT} alt="" className="w-full lg:w-[500px] rounded-md" />
+              <Image
+                src={CowNFT}
+                alt=""
+                className="w-full lg:w-[500px] rounded-md"
+              />
               <div className="w-full my-1">
                 <article className="bg-white p-5 rounded-md w-full flex flex-col justify-between shadow-sm">
                   <Tabs defaultValue="description" className="w-auto">
@@ -119,8 +121,22 @@ export default function LivestockPage() {
                       <TabsTrigger value="ownership">Ownership</TabsTrigger>
                       <TabsTrigger value="stats">Statistics</TabsTrigger>
                     </TabsList>
-                    <TabsContent value="description" className="w-full lg:w-[400px]">
-                      <h4>Discover the exceptional quality of our Freshian Arabian Female Dairy Cow! This premium breed combines the superior milk production of the Freshian with the hardy, adaptable nature of the Arabian. She is a perfect addition to any dairy farm, offering high yields of rich, creamy milk. Raised with the utmost care, she is healthy, well-tempered, and ready to enhance your herd. Don’t miss the chance to invest in this outstanding dairy cow and boost your farm’s productivity. Contact us today to learn more and arrange a visit!</h4>
+                    <TabsContent
+                      value="description"
+                      className="w-full lg:w-[400px]"
+                    >
+                      <h4>
+                        Discover the exceptional quality of our Freshian Arabian
+                        Female Dairy Cow! This premium breed combines the
+                        superior milk production of the Freshian with the hardy,
+                        adaptable nature of the Arabian. She is a perfect
+                        addition to any dairy farm, offering high yields of
+                        rich, creamy milk. Raised with the utmost care, she is
+                        healthy, well-tempered, and ready to enhance your herd.
+                        Don’t miss the chance to invest in this outstanding
+                        dairy cow and boost your farm’s productivity. Contact us
+                        today to learn more and arrange a visit!
+                      </h4>
                       <dl className="">
                         {description.map((faq) => (
                           <Fragment key={faq.title}>
@@ -134,7 +150,10 @@ export default function LivestockPage() {
                         ))}
                       </dl>
                     </TabsContent>
-                    <TabsContent value="ownership" className="w-full lg:w-[400px]">
+                    <TabsContent
+                      value="ownership"
+                      className="w-full lg:w-[400px]"
+                    >
                       <h2>Analytics</h2>
                     </TabsContent>
                     <TabsContent value="stats" className="w-full lg:w-[400px]">
@@ -180,7 +199,7 @@ export default function LivestockPage() {
               <AreaChartContainer />
             </div>
           </div>
-            <TransactionsTableContainer />
+          <TransactionsTableContainer />
         </div>
       </div>
     </div>

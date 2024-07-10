@@ -1,6 +1,7 @@
 "use client";
 
 import DashboardOverview from "@/components/common/cards/dashboard-overview";
+import Map from "@/components/common/map/map";
 import Geolocator from "@/components/common/maps/geolocator";
 import PenTableContainer from "@/components/common/table/PensTable/Pen";
 import { dashboardOverviewSource } from "@/helpers/dashboard-overview-source";
@@ -14,11 +15,14 @@ const DashboardPage = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-2">
         {dashboardOverviewSource.map((element, index) => {
           return (
-            <DashboardOverview element={element} key={index} />
+            <div key={index}>
+              <DashboardOverview element={element} />
+            </div>
           );
         })}
       </div>
-      <Geolocator />
+      {/* <Geolocator /> */}
+      <Map />
       <PenTableContainer />
     </section>
   );

@@ -2,11 +2,10 @@ import { CaretUp, File } from "@phosphor-icons/react";
 import Link from "next/link";
 import React from "react";
 
-const DashboardOverview = ({ element, key }: any) => {
+const DashboardOverview = ({ element }: any) => {
   return (
     <Link
-      href="/admin/property"
-      key={key}
+      href=""
       className="flex flex-col items-start bg-white hover:bg-gradient-to-r from-gradient-light-blue to-gradient-deep-blue rounded-xl p-4 w-full group"
     >
       <span className="text-[#8082FF] group-hover:text-white group-hover:bg-[#ffffff15] p-3 flex flex-col items-center rounded-xl">
